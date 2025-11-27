@@ -1,4 +1,4 @@
-# Detecção Automática de EPIs usando Computer Vision
+# Detecção Automática de EPIs
 
 Sistema de monitoramento automático para identificar o uso correto de Equipamentos de Proteção Individual (EPIs) em ambientes industriais utilizando modelos de detecção de objetos em tempo real.
 
@@ -54,6 +54,18 @@ Detector de dois estágios com backbone ResNet50-FPN. Mais computacionalmente in
 | **YOLOv8n** | **0.8157** | **0.4762** | **11.93 ms** | 5.37 MB |
 | YOLOv11n | 0.7154 | 0.4254 | 14.16 ms | **5.22 MB** |
 | Faster R-CNN | 0.6239 | 0.2992 | 93.40 ms | 165.55 MB |
+
+### Comparação Detalhada de Métricas
+
+A tabela abaixo apresenta uma comparação completa de todas as métricas avaliadas, incluindo precision, recall, F1-score e estabilidade:
+
+![Tabela Comparativa Detalhada dos Modelos](Figuras/Imagem%20do%20WhatsApp%20de%202025-11-24%20à(s)%2010.36.17_22280960.jpg)
+
+**Destaques:**
+- **YOLOv8n** apresenta o melhor **mAP@50 (0.7258)** e **Precision (0.8277)**
+- **YOLOv11n** possui o melhor **Recall (0.6646)** e menor **gap de overfitting (65.58%)**
+- **Faster R-CNN** mostra o maior **F1-score (0.7349)**, mas com tempo de inferência muito superior
+- A estabilidade (oscilações) é similar entre YOLOv8n (0.0078) e YOLOv11n (0.0084)
 
 ### Evolução do Treinamento
 
