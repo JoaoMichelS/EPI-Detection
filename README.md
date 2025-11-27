@@ -47,15 +47,7 @@ Detector de dois estágios com backbone ResNet50-FPN. Mais computacionalmente in
 
 ## Resultados
 
-### Comparação de Performance
-
-| Modelo | mAP@50 | mAP@50-95 | Tempo de Inferência | Tamanho do Modelo |
-|--------|---------|-----------|---------------------|-------------------|
-| **YOLOv8n** | **0.8157** | **0.4762** | **11.93 ms** | 5.37 MB |
-| YOLOv11n | 0.7154 | 0.4254 | 14.16 ms | **5.22 MB** |
-| Faster R-CNN | 0.6239 | 0.2992 | 93.40 ms | 165.55 MB |
-
-### Comparação Detalhada de Métricas
+### Comparação 
 
 A tabela abaixo apresenta uma comparação completa de todas as métricas avaliadas, incluindo precision, recall, F1-score e estabilidade:
 
